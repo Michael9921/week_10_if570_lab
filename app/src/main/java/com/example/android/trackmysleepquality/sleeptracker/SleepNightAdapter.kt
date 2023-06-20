@@ -7,10 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.trackmysleepquality.R
-import com.example.android.trackmysleepquality.convertNumericQualityToString
-import com.example.android.trackmysleepquality.database.SleepNight
 import com.example.android.trackmysleepquality.convertDurationToFormatted
 import com.example.android.trackmysleepquality.convertNumericQualityToString
+import com.example.android.trackmysleepquality.database.SleepNight
 
 class SleepNightAdapter: RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
     var data =  listOf<SleepNight>()
@@ -23,7 +22,7 @@ class SleepNightAdapter: RecyclerView.Adapter<SleepNightAdapter.ViewHolder>() {
         val quality: TextView = itemView.findViewById(R.id.quality_string)
         val qualityImage: ImageView = itemView.findViewById(R.id.quality_image)
     }
-//    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+//    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){*
 //        val sleepLength: TextView = itemView.findViewById(R.id.sleep_length)
 //        val quality: TextView = itemView.findViewById(R.id.quality_string)
 //        val qualityImage: ImageView = itemView.findViewById(R.id.quality_image)
